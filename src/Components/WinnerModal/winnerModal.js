@@ -14,8 +14,7 @@ const winnerModal = props => (
         <div className="icon">
           <FontAwesomeIcon icon={faTrophy} className="trophy" />
         </div>
-        <div className="title">{props.winnerName} a castigat!</div>
-        <div className="description">Esti prea jmecher la jocu asta 🥳</div>
+        <div className="title">{props.winnerName} won!</div>
         <div className="dismiss-btn">
           <button id="dismiss-popup-btn" onClick={props.clicked}>
             Continue
@@ -27,8 +26,7 @@ const winnerModal = props => (
         <div className="icon">
           <FontAwesomeIcon icon={faTrophy} className="trophy" />
         </div>
-        <div className="title">{props.winnerName} a castigat!</div>
-        <div className="description">Esti prea jmecher la jocu asta 🥳</div>
+        <div className="title">{props.winnerName} won!</div>
         <div className="dismiss-btn">
           <button id="dismiss-popup-btn" onClick={props.clicked}>
             Continue
