@@ -1,0 +1,89 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #63d471;
+  background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.modal h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+}
+
+.modal .user-box {
+  position: relative;
+}
+
+.modal .user-box input {
+  width: 100%;
+  padding: 14px 5px;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.modal .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7px 5px;
+  font-size: 18px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.modal.user-box input:focus ~ label,
+.modal .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #02c9d3;
+  font-size: 15px;
+}
+
+.button-submit {
+  background-color: transparent;
+  color: #fff;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 0px;
+  padding: 10px 18px;
+  display: inline-block;
+  font-family: 'Lucida Console', Monaco, monospace;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #4c514b;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.button-submit:hover {
+  color: black;
+  box-shadow: inset 0 100px 0 0 #1cc673;
+}
